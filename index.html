@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-Strike Weapon Comparison</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/69f7ebe2735c366c65c0b33dae00e12dc40edbe4.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Counter-Strike Weapon Comparison</h1>
+        
+        <div class="weapons-container">
+            <div class="weapon" id="weapon1">
+                <img src="https://static.wikia.nocookie.net/cswikia/images/0/0c/CS2_AK-47_Inventory.png/revision/latest?cb=20230928175330" alt="AK-47">
+                <h2 class="weapon-name">AK-47</h2>
+                <div class="weapon-stats">
+                    <p>Damage: <span class="damage-value">36</span></p>
+                    <p>Fire Rate: 600 RPM</p>
+                    <p>Accuracy: 70%</p>
+                </div>
+            </div>
+            
+            <div class="vs-badge">VS</div>
+            
+            <div class="weapon" id="weapon2">
+                <img src="https://static.wikia.nocookie.net/cswikia/images/7/77/CS2_M4A4_Inventory.png/revision/latest?cb=20230928175315" alt="M4A4">
+                <h2 class="weapon-name">M4A4</h2>
+                <div class="weapon-stats">
+                    <p>Damage: <span class="damage-value">33</span></p>
+                    <p>Fire Rate: 666 RPM</p>
+                    <p>Accuracy: 75%</p>
+                </div>
+            </div>
+        </div>
+        
+        <button id="compare-button">Compare Weapons</button>
+        
+        <div id="result" class="result">
+            <!-- Comparison result will appear here -->
+        </div>
+        
+        <div class="battle-log">
+            <h3>Battle Log</h3>
+            <div id="log-container">
+                <!-- Log entries will appear here -->
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Created for Counter-Strike enthusiasts</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

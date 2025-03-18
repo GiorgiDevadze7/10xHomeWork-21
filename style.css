@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1b2838;
+    color: #c7d5e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #2a475e;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #66c0f4;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.weapons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.weapon {
+    background-color: #1f3141;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weapon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.weapon img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.weapon-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.weapon-stats {
+    text-align: left;
+    padding: 10px;
+    background-color: #17212b;
+    border-radius: 5px;
+}
+
+.weapon-stats p {
+    margin: 5px 0;
+    color: #acb2b8;
+}
+
+.vs-badge {
+    background-color: #c75000;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #66c0f4;
+    color: #1b2838;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #1999ff;
+}
+
+.result {
+    min-height: 50px;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #17212b;
+    display: none;
+}
+
+.winner {
+    display: block;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.battle-log {
+    background-color: #17212b;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.battle-log h3 {
+    color: #66c0f4;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#log-container {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #0e141b;
+    border-radius: 5px;
+}
+
+.log-entry {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #2a475e;
+}
+
+footer {
+    margin-top: 30px;
+    color: #66c0f4;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .weapons-container {
+        flex-direction: column;
+    }
+    
+    .weapon {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .vs-badge {
+        margin: 10px 0;
+    }
+}
